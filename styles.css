@@ -1,0 +1,102 @@
+body {
+    background: peachpuff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+    background: linear-gradient(to bottom right, blue, pink 70%);
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 1px 1px 1px red, 2px 2px 1px red;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: whitesmoke;
+}
+tr:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+td:first-child {
+    font-weight: bold;
+    /*text-align: right;*/
+}
+/* Следующая конструкция как-то делает цвет
+   строки приоритетным над цветом колонки... */
+.yellow {
+    color: white;
+    background: green;
+    border-style: dashed solid;
+}
+.yellow td {  /* вот это уточнение */
+    color: white;
+    background: green;
+    border-style: dashed solid;
+}
+.red {
+    background: red;
+}
+.red td {
+    background: red;
+}
+.gray {
+    background: gray;
+}
+.gray td {
+    background: gray;
+}
+.inline {
+    display: inline-block;
+}
+.boxv {
+    width: 31em;
+    height: 11em;
+    margin: 0.5em 1em 2em 0;
+    margin: 0 auto;
+}
+.boxp {
+    width: 31em;
+    height: 21em;
+    margin: 2em 1em 2em 0;
+}
+.boxb {
+    width: 21em;
+    height: 21em;
+    margin: 2em 1em 2em 0;
+}
+textarea {
+    resize: none;
+    background: Gainsboro;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    padding: 5px;
+    font: bold 0.8em sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    background: #0505ad;
+    color: #fff;
+}

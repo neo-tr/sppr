@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Support Sistem for Decision</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <main>
+        <h2>Системный анализ и принятие решений</h2>
+        <h2>Лабораторная работа №4</h2>
+    </main>
+    <hr />
+    <div class="boxv">
+        <div><b>Варианты:</b></div>
+        <textarea id="v" class="text" spellcheck="false">
+            LADA (ВАЗ) Priora 1, 2008 (1 вариант)
+            LADA (ВАЗ) Priora 1, 2009 (2 вариант)
+            LADA (ВАЗ) Priora 1, 2009 (3 вариант)
+        </textarea>
+    </div>
+    <div class="boxp inline">
+        <div><b>Предпочтения:</b></div>
+        <textarea id="p" class="text tabs" spellcheck="false">
+            Цена    -0.3
+            Год выпуска   0.3
+            Пробег      -0.4
+        </textarea>
+    </div>
+    <div class="boxb inline">
+        <div><b>Бинарные предпочтения:</b></div>
+        <textarea id="b" class="text tabs" spellcheck="false">
+            143000   150000   148000
+            2008  2009  2009
+            170000   140000   150000
+        </textarea>
+    </div>
+    <div><input id="button" type="submit" value="Пересчитать" title="Пересчитать результат"></div>
+</body>
+</html>
